@@ -1,0 +1,1 @@
+document.getElementById("task").addEventListener("input", e =>{e.target.nextElementSibling.textContent=`${e.target.value.length} / 100`})

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@500;700&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style-font.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="create-new-task">
+        <h1>
+            Create New task
+        </h1>
+        <form class="create-new-task__form">
+            <div class="create-new-task__task">
+                <input name="text" placeholder="Title" type="text" maxlength="100" id="task">
+                <span>0/100</span>
+            </div>
+            <a href="#">Click to add Description</a>
+            <div class="create-new-task__color">
+                <label for="color">Label color</label>
+                <div class="values-color">
+                    <input id="color1" name="color" type="radio" value="#878C93">
+                    <label for="color1"></label>
+                    <input id="color2" name="color" type="radio" value="#6153CC">
+                    <label for="color2"></label>
+                    <input id="color3" name="color" type="radio" value="#FF715B">
+                    <label for="color3"></label>
+                    <input id="color4" name="color" type="radio" value="#151515">
+                    <label for="color4"></label>
+                    <input id="color5" name="color" type="radio" value="#FFB627">
+                    <label for="color5"></label>
+                </div>
+            </div>
+            <div class="create-new-task__assignee">
+                <span class="icon-user"></span>
+                <select name="select">
+                    <option value="value1">Select Assignee</option>
+                    <option value="value2">Lily</option>
+                    <option value="value3">Tom</option>
+                </select>
+            </div>
+            <div class="create-new-task__dates">
+                <div class="create-new-task__choose-date">
+                    <span class="icon-calendar"></span>
+                    <input name="date" type="text" placeholder="18-07-22">
+                </div>
+                <div class="create-new-task__choose-date">
+                    <span class="icon-calendar"></span>
+                    <input name="date" type="text" placeholder="18-07-22">
+                </div>
+            </div>
+            <div class="create-new-task__buttons">
+                <button id="btn-cancel" name="button1id" class="btn btn-cancel">Cancel</button>
+                <button id="btn-save" name="button2id" class="btn btn-save">Save</button>
+            </div>
+        </form>
+        <div class="border-line"></div>
+    </div>
+    <div class="create-new-task border-rotate"></div>
+
+    <script src="javascript/index.js"></script>
+</body>
+</html>
